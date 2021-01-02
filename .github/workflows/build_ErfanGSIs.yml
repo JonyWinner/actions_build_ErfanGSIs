@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/flame-rpp4.200409.015-factory-8012c549.zip Generic Pixel
-  ROM_NAME: Generic
+  ROM_URL: https://bigota.d.miui.com/20.12.28/miui_GRUS_20.12.28_5c31b29c23_11.0.zip MIUI For Android 11
+  ROM_NAME: MIUI
   TZ: Jony/Winner
 
 jobs:
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
+              ./transfer wss final/GSI.zip
 
          
             
